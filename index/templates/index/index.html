@@ -2,12 +2,33 @@
 
 {% block main %}
 
-    This is the main page.
-    
-    Go to the <a href="{{ url_for('index_bp.about') }}">about page.</a>
 
-    <br> <br>
+    <div class="md:flex justify-center">
+        <div class="text-center my-auto">
+            <div class="my-6 mx-auto">
+                <div class="title text-3xl">
+                    The <span class="text-orange-400">Art</span> of <span class="text-blue-400">Code Bending</span>
+                </div>
+                <div class="md:text-lg w-5/6 mx-auto my-8">
+                        Hi there! I'm so glad you came to visit. <br>
+                        Here you can learn everything you need to know about <span class="text-orange-400">reinforcement learning.</span>
+                </div>
+                <div class="flex justify-center">
+                    <div class="border-4 text-lg border-blue-400 py-2 rounded-lg w-[20%]">
+                        Courses
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-4/6 m-auto md:mx-6 md:w-[30%]">
+            <img class="my-auto" src="{{ url_for('static', filename='img/index.png') }}" alt="The main picture">
+        </div>
+    </div>
 
-    Or you can visit the <a href="{{ url_for('blog_bp.home') }}">blog!</a>
+    <div class="my-8">
+        <div class="text-center title text-3xl">
+            New Videos
+        </div>
+    </div>
 
 {% endblock %}
